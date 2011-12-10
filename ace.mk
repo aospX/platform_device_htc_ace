@@ -25,8 +25,6 @@ PRODUCT_COPY_FILES += \
 
 ## (2) Also get non-open-source GSM-specific aspects if available
 $(call inherit-product-if-exists, vendor/htc/ace/ace-vendor.mk)
-# Talon vendor files
-$(call inherit-product-if-exists, vendor/talon/talon-vendor.mk)
 
 ## (3)  Finally, the least specific parts, i.e. the non-GSM-specific aspects
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -62,10 +60,6 @@ PRODUCT_PACKAGES += \
     gralloc.msm7x30 \
     audio_policy.msm7x30 \
     audio.primary.msm7x30
-
-# missing packages
-PRODUCT_PACKAGES += \
-    Mms \
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
