@@ -57,9 +57,15 @@ PRODUCT_PACKAGES += \
     lights.spade \
     sensors.spade \
     gps.spade \
+    audio.a2dp.default \
     gralloc.msm7x30 \
     audio_policy.msm7x30 \
-    audio.primary.msm7x30
+    audio.primary.msm7x30 \
+    overlay.default \
+    libOmxCore \
+    libOmxVenc \
+    libOmxVdec \
+    com.android.future.usb.accessory
 
 # Keylayouts
 PRODUCT_COPY_FILES += \
