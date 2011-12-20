@@ -21,6 +21,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 
 PRODUCT_COPY_FILES += \
     device/htc/ace/init.spade.rc:root/init.spade.rc \
+    device/htc/ace/init.spade.usb.rc:root/init.spade.usb.rc \
     device/htc/ace/ueventd.spade.rc:root/ueventd.spade.rc
 
 ## (2) Also get non-open-source GSM-specific aspects if available

@@ -59,6 +59,9 @@ BOARD_USES_QCOM_LIBRPC := true
 BOARD_USES_QCOM_GPS := true
 BOARD_USE_QCOM_PMEM := true
 
+#USB mount
+TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
+
 #BOARD_CAMERA_USE_GETBUFFERINFO := true
 
 #BOARD_OVERLAY_FORMAT_YCbCr_420_SP := true
