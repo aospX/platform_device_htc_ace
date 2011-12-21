@@ -59,6 +59,7 @@ PRODUCT_PACKAGES += \
     sensors.spade \
     gps.spade \
     audio.a2dp.default \
+    hwcomposer.default \
     gralloc.msm7x30 \
     audio_policy.msm7x30 \
     audio.primary.msm7x30 \
