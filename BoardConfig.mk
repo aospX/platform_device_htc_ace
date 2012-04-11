@@ -41,8 +41,6 @@ BOARD_KERNEL_PAGE_SIZE := 4096
 # Workaround for Ace's broken overlay scaling
 #BOARD_OVERLAY_MINIFICATION_LIMIT := 2
 
-TARGET_USE_CUSTOM_LUN_FILE_PATH := /sys/devices/platform/usb_mass_storage/lun0/file
-
 BOARD_VENDOR_QCOM_GPS_LOC_API_HARDWARE := spade
 
 # cat /proc/emmc
@@ -63,7 +61,10 @@ BOARD_BOOTIMAGE_PARTITION_SIZE := 4194304
 BOARD_FLASH_BLOCK_SIZE := 262144
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/htc/common
-TARGET_PREBUILT_KERNEL := device/htc/msm7x30-common/msm7230/kernel
+
+TARGET_KERNEL_CONFIG := talon_msm7230_defconfig
+TARGET_KERNEL_SOURCE := kernel/msm7x30
+# TARGET_PREBUILT_KERNEL := device/htc/msm7x30-common/msm7230/kernel
 
 BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_SDCARD_DEVICE_PRIMARY := /dev/block/mmcblk1p1
