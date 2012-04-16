@@ -50,7 +50,6 @@ on boot
     chmod 0664 /sys/kernel/mm/ksm/run
     write /sys/kernel/mm/ksm/sleep_millisecs 1500
     write /sys/kernel/mm/ksm/pages_to_scan 256
-    write /sys/kernel/mm/ksm/run 1
 
     chown system system /sys/module/serial/parameters/modem_enabled
     chown system system /dev/ttyHSUSB0
