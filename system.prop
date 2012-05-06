@@ -75,3 +75,6 @@ dalvik.vm.dexopt-data-only=1
 
 # Enable/Disable Bootanimation
 persist.sys.nobootanimation=0
+
+# Disable kernel error checking
+ro.kernel.android.checkjni=0
