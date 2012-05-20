@@ -61,6 +61,10 @@ on boot
     #write /proc/sys/net/ipv6/conf/rmnet1/disable_ipv6 1
     #write /proc/sys/net/ipv6/conf/rmnet2/disable_ipv6 1
 
+    # Disable all xt_qtaguid checks
+    write /sys/module/xt_qtaguid/parameters/ctrl_write_gid 0
+    write /sys/module/xt_qtaguid/parameters/stats_readall_gid 0 
+
     # for Flip to speaker
     chown radio radio /sys/class/htc_accelerometer/accelerometer/PhoneOnOffFlag
     chown radio radio /sys/class/htc_ecompass/ecompass/PhoneOnOffFlag
